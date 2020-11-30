@@ -6,7 +6,7 @@
 
 This repository - as suggested by the title - contains projects made in just one day.
 
-Its aim is to show how much can be done in one day when it comes to web projects. Be it a simple To-do list or a complex application, it will be available here. This repository will eventually be filled with projects on the long run, though they won't be uploaded here daily due to my own time constraints.
+Its aim is to show how much can be done in one day when it comes to web projects. Be it a simple To-do list or a complex application, it will be available here. This repository will eventually be filled with projects in the long run, though they won't be uploaded here daily due to my own time constraints.
 
 ## :pencil: Projects
 
