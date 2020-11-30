@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --screen-height: 100vh;
+
+  --gray: #555;
+  --gray-dark: #333;
+  --gray-darker: #111;
+  --gray-light: #f1f1f1;
+  --gray-lighter: #fafafa;
+  --blue: #279af1;
+  --orange: #ffb300;
+  --white: #f7f7ff;
+  --black: #131112;
+
+  --background-label: #292c35;
+
+  --brand-primary: var(--blue);
+  --background: var(--white);
+  --background-header: var(--white);
+  --background-footer: var(--white);
+  --text-color: var(--gray-darker);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow: hidden;
+
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  transition: background-color 0.25s;
+  will-change: background-color;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+}
+
+body.dark {
+  background: var(--black);
+  --background-header: var(--black);
+  --background-footer: var(--black);
+  --text-color: var(--white);
+  --brand-primary: var(--orange);
+}
+
+header {
+  align-items: center;
+  background-color: var(--background-header);
+  border-bottom: solid var(--space-smallest) var(--brand-primary);
+  display: flex;
+  height: var(--space-xlg);
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px var(--space);
+  transition: background-color 0.25s;
+  will-change: background-color;
+}
+
+footer {
+  align-items: center;
+  background-color: var(--background-footer);
+  border-top: solid var(--space-smallest) var(--brand-primary);
+  display: flex;
+  height: var(--space-xxlg);
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px var(--space);
+  transition: background-color 0.25s;
+  will-change: background-color;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--background-label);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+.dark .label {
+  background-color: var(--white);
+}
+
+.label .ball {
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.dark .label .ball {
+  background-color: var(--black);
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.label .moon,
+.label .sun {
+  font-size: 13px;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 132px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tooltip {
+  height: 32px;
+  width: 32px;
+  background-color: var(--blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.dark .tooltip {
+  background-color: var(--orange);
+}
+
+.tooltip i {
+  color: var(--white);
+}
+
+.dark .tooltip i {
+  color: var(--black);
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 128px;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: 170%;
+  left: 50%;
+  margin-left: -64px;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.dark .tooltip .tooltip-text {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent var(--black) transparent;
+}
+
+.dark .tooltip .tooltip-text::after {
+  border-color: transparent transparent var(--white) transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.content {
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: justify;
+  text-justify: inter-word;
+
+  height: 100%;
+  border: solid var(--space-smallest) var(--brand-primary);
+  margin: var(--space-sm);
+  padding: var(--space-xs);
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content a {
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+
+.content p {
+  padding: 0 var(--space-xlg);
+}
+
+.dark .content a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+@media (max-width: 1440px) {
+  header,
+  footer {
+    height: var(--space-xlg);
+  }
+
+  .content {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 512px) {
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .content {
+    overflow-y: scroll;
+    height: calc(
+      var(--screen-height) - var(--space-xxlg) - var(--space-xxlg) -
+        var(--space-xlg) - var(--space-xlg)
+    );
+  }
+
+  .content h1 {
+    padding: 0px var(--space);
+    font-size: 1rem;
+  }
+
+  .content p {
+    padding: 0px var(--space-md);
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+
+  header {
+    height: var(--space-xlg);
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0px;
+    height: var(--space-xlg);
+    font-size: 14px;
+    padding: 0px var(--space-sm);
+  }
+
+  footer span.center {
+    max-width: 128px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
