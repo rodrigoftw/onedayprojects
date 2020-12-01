@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --gray-custom: #bdbdbd;
+  --gray-darker: #111;
+  --white: #fff;
+  --black: #131112;
+
+  --background: var(--white);
+  --title-color: var(--black);
+  --text-color: var(--gray-darker);
+  --copied-text-color: var(--gray-custom);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  transition: background 1s ease;
+}
+
+#card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  max-width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+#card span {
+}
+
+#card > #title {
+  font-size: 18px;
+}
+
+#card > #title a {
+  text-decoration: none;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+#card > #text-color {
+  pointer-events: none;
+  font-size: 14px;
+  color: var(--text-color);
+  transition: color 1s ease;
+  margin-top: var(--space-md);
+}
+#card > #description {
+  pointer-events: none;
+}
+
+#copied {
+  pointer-events: none;
+  color: var(--copied-text-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
