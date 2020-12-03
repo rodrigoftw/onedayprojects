@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --white: #ffffff;
+  --black: #30363d;
+  --primary: #f27a54;
+  --secondary: #a154f2;
+  --gray-custom: #b3b3b3;
+  --card-background: #3c444d;
+
+  --text-color: var(--white);
+  --background: var(--black);
+  --title-color: var(--primary);
+  --location-text-color: var(--gray-custom);
+  --avatar-circle: linear-gradient(0.25turn, var(--primary), var(--secondary));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  transition: background 1s ease;
+  overflow: hidden;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+  margin: 16px;
+}
+
+.top-content .left-card,
+.top-content .right-card {
+  background-color: var(--card-background);
+  border-radius: 6px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 64px;
+  overflow: hidden;
+}
+
+.left-card a,
+.right-card a {
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.left-card a .fa,
+.right-card a .fa {
+  opacity: 1;
+  font-size: 48px;
+  transition: opacity 0.2s;
+}
+
+.left-card:hover,
+.right-card:hover {
+  background-color: var(--white);
+  transition: background-color 0.2s;
+}
+
+.left-card:hover a .fa,
+.right-card:hover a .fa {
+  color: var(--card-background);
+  transition: color 0.2s;
+}
+
+#card {
+  background-color: var(--card-background);
+  background-size: 300px;
+  transition: background 0.8s;
+  border-radius: 6px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  max-width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+
+#card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#card:hover {
+  background: url("https://avatars2.githubusercontent.com/u/14150961?v=4") left
+    center no-repeat;
+  background-size: 375px;
+}
+
+#card:hover .icons {
+  opacity: 1;
+  width: var(--space-lg);
+  background: var(--card-background);
+}
+
+#card:hover .icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--card-background);
+  border-left: 1px solid var(--primary);
+}
+
+#card:hover .icons a:hover {
+  background: var(--background);
+  transition: background 0.2s;
+}
+
+#card:hover .fa {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+#card:hover .image-border-wrap {
+  opacity: 0;
+}
+
+#card:hover span {
+  opacity: 0;
+}
+
+#card .info .image-border-wrap {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: var(--avatar-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+#card .info .image-border-wrap img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+#card .info #occupation {
+  margin-top: var(--space-lg);
+  color: var(--title-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+
+#card .info #name {
+  margin: 8px 0px;
+  color: var(--text-color);
+  font-family: Zilla Slab;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+#card .info #location {
+  color: var(--location-text-color);
+  font-family: Zilla Slab;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.fa {
+  opacity: 0;
+  font-size: 20px;
+}
+
+#card .icons {
+  display: flex;
+  height: 100%;
+  width: 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+}
+
+#card .icons a {
+  text-decoration: none;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
