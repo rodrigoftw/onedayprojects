@@ -1,6 +1,6 @@
 const body = document.body;
 const currentYear = new Date().getFullYear();
-const endTime = new Date(`December 06 ${currentYear} 18:31:59`);
+const endTime = new Date(`December 31 ${currentYear} 23:59:59`);
 
 const h1Elements = document.querySelectorAll("h1");
 
