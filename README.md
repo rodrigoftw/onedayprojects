@@ -14,10 +14,10 @@ If you want to give me any project suggestions, feel free to do so by creating a
 
 ## :pencil: Projects
 
-|                                                   Project                                                   |                         Demo                          |
-| :---------------------------------------------------------------------------------------------------------: | :---------------------------------------------------: |
-|        [Simple Theme Toggler](https://github.com/rodrigoftw/onedayprojects/tree/master/themetoggler)        | [CodePen](https://codepen.io/rodrigoftw/full/PoGqWqX) |
-|   [Simple Background Changer](https://github.com/rodrigoftw/onedayprojects/tree/master/backgroundchanger)   | [CodePen](https://codepen.io/rodrigoftw/full/GRjJVLj) |
-|        [User Profile Card](https://github.com/rodrigoftw/onedayprojects/tree/master/userprofilecard)        | [CodePen](https://codepen.io/rodrigoftw/full/mdrVPEE) |
-|       [New Year Countdown](https://github.com/rodrigoftw/onedayprojects/tree/master/newyearcountdown)       | [CodePen](https://codepen.io/rodrigoftw/full/wvzGRgb) |
-| [Instagram Stories Layout](https://github.com/rodrigoftw/onedayprojects/tree/master/instagramstorieslayout) | [CodePen](https://codepen.io/rodrigoftw/full/YzGWWPq) |
+|                                                   Project                                                   |                        Demo                        |
+| :---------------------------------------------------------------------------------------------------------: | :------------------------------------------------: |
+|        [Simple Theme Toggler](https://github.com/rodrigoftw/onedayprojects/tree/master/themetoggler)        | [Link](https://codepen.io/rodrigoftw/full/PoGqWqX) |
+|   [Simple Background Changer](https://github.com/rodrigoftw/onedayprojects/tree/master/backgroundchanger)   | [Link](https://codepen.io/rodrigoftw/full/GRjJVLj) |
+|        [User Profile Card](https://github.com/rodrigoftw/onedayprojects/tree/master/userprofilecard)        | [Link](https://codepen.io/rodrigoftw/full/mdrVPEE) |
+|       [New Year Countdown](https://github.com/rodrigoftw/onedayprojects/tree/master/newyearcountdown)       | [Link](https://codepen.io/rodrigoftw/full/wvzGRgb) |
+| [Instagram Stories Layout](https://github.com/rodrigoftw/onedayprojects/tree/master/instagramstorieslayout) | [Link](https://codepen.io/rodrigoftw/full/YzGWWPq) |
