@@ -8,6 +8,10 @@ This repository - as suggested by the title - contains projects made in just one
 
 Its aim is to show how much can be done in one day when it comes to web projects. Be it a simple To-do list or a complex application, it will be available here. This repository will eventually be filled with projects in the long run, though they won't be uploaded here daily due to my own time constraints.
 
+## :thought_balloon: Project ideas
+
+If you want to give me any project suggestions, feel free to do so by creating a new issue. New project suggestions are always welcome!
+
 ## :pencil: Projects
 
 |                                                   Project                                                   |                         Demo                          |
