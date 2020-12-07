@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --white: #ffffff;
+  --black: #30363d;
+  --avatar-circle: linear-gradient(45deg, orange, deeppink);
+  --gray-custom: #b3b3b3;
+  --background: #e6e6e6;
+  --card-background: var(--white);
+  --text-color: var(--black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  transition: background-color 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
+  text-align: center;
+}
+
+#container {
+  background-color: var(--white);
+  transition: background-color 0.8s;
+  border: 1px var(--gray-custom) solid;
+  border-radius: 6px;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 100%;
+  height: 250px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: var(--space-xlg);
+  padding: var(--space-md);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px var(--space-sm);
+  transition: transform 0.2s ease-in-out;
+}
+
+.user:hover {
+  transform: scale(1.1);
+}
+
+.image-border-wrap {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: var(--avatar-circle);
+  cursor: pointer;
+}
+
+.image-border-wrap img {
+  position: relative;
+  top: 2px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 4px var(--white) solid;
+}
+
+span {
+  color: var(--text-color);
+  margin-top: var(--space-xs);
+  cursor: default;
+}
