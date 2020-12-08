@@ -21,3 +21,4 @@ If you want to give me any project suggestions, feel free to do so by creating a
 |        [User Profile Card](https://github.com/rodrigoftw/onedayprojects/tree/master/userprofilecard)        | [Link](https://codepen.io/rodrigoftw/full/mdrVPEE) |
 |       [New Year Countdown](https://github.com/rodrigoftw/onedayprojects/tree/master/newyearcountdown)       | [Link](https://codepen.io/rodrigoftw/full/wvzGRgb) |
 | [Instagram Stories Layout](https://github.com/rodrigoftw/onedayprojects/tree/master/instagramstorieslayout) | [Link](https://codepen.io/rodrigoftw/full/YzGWWPq) |
+|     [Infinite Pencil Spin](https://github.com/rodrigoftw/onedayprojects/tree/master/infinitepencilspin)     | [Link](https://codepen.io/rodrigoftw/pen/rNMMBwp)  |
