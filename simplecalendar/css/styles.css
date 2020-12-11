@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --link-text-color: #ffffff;
+  --background: #c5e1b7;
+  --month-background: #ce5f5f;
+  --day-background: #ffffff;
+  --month-text-color: #ffffff;
+  --day-text-color: #000000;
+  --calendar-shadow-color: #8b97a1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  transition: background-color 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Muli", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: var(--space-xlg);
+  background-color: var(--month-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: var(--link-text-color);
+  text-decoration: none;
+}
+
+.calendar {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 200px;
+  box-shadow: 0px 12px 0px var(--space-xs) var(--calendar-shadow-color);
+}
+
+span#month {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--space-md);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--month-text-color);
+  background-color: var(--month-background);
+}
+
+span#day {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 96px;
+  color: var(--day-text-color);
+  background-color: var(--day-background);
+}
+
+@media (max-width: 320px) {
+  nav {
+    padding: var(--space-xs);
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
