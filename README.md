@@ -25,3 +25,4 @@ If you want to give me any project suggestions, feel free to do so by creating a
 | [Neumorphic Loading Animation](https://github.com/rodrigoftw/onedayprojects/tree/master/neumorphicloadinganimation) | [Link](https://codepen.io/rodrigoftw/full/ExgNjdE) |
 |             [Simple Calendar](https://github.com/rodrigoftw/onedayprojects/tree/master/simplecalendar)              | [Link](https://codepen.io/rodrigoftw/full/bGwBmMG) |
 |                       [Clock](https://github.com/rodrigoftw/onedayprojects/tree/master/clock)                       | [Link](https://codepen.io/rodrigoftw/full/abmBQqX) |
+|                 [Letter Soup](https://github.com/rodrigoftw/onedayprojects/tree/master/lettersoup)                  | [Link](https://codepen.io/rodrigoftw/full/MWjpzdO) |
