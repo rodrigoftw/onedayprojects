@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,300;1,200&display=swap");
+
+:root {
+  --space-smallest: 1px;
+  --space-smaller: 2px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --space-xxlg: 80px;
+
+  --white: #ffffff;
+  --black: #30363d;
+  --text-color: #000000;
+  --mark-text-color: #ff0;
+  --background: #e6e6e6;
+  --blockquote-color: #666;
+  --blockquote-bar-color: #efefef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  transition: background-color 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: var(--space-xlg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: var(--space-xxlg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+a {
+  width: 100%;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.container-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: var(--space-md);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.post-credits {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  margin-top: 25%;
+}
+
+.author {
+  width: 214px;
+  height: 214px;
+}
+
+.author img {
+  width: 214px;
+  height: 214px;
+}
+
+.author-info {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-sm);
+}
+
+span {
+  color: var(--white);
+  margin-top: var(--space-xs);
+  cursor: default;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+mark {
+  background-color: var(--mark-text-color);
+  color: var(--text-color);
+}
+
+blockquote,
+p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+blockquote {
+  width: 100%;
+  padding: 2rem 10% 3rem;
+  display: inline-block;
+  clear: both;
+  color: var(--blockquote-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem auto 2.5rem;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (min-width: 37.5em) {
+  blockquote {
+    padding: 3rem 15%;
+    font-size: 1.5rem;
+  }
+}
+
+blockquote:after,
+blockquote:before {
+  content: " ";
+  border-top: 3px solid var(--blockquote-bar-color);
+  position: absolute;
+  top: 0.625rem;
+  width: 50%;
+  height: 1px;
+  left: 25%;
+}
+
+blockquote:after {
+  bottom: 0.625rem;
+  top: auto;
+  width: 30%;
+  left: 35%;
+}
+
+@media (max-width: 420px), (max-height: 750px) {
+  nav,
+  footer {
+    padding: var(--space-xs);
+    flex-direction: column;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .post-credits {
+    flex-direction: column;
+  }
+
+  .post-credits .author {
+    margin: var(--space-sm);
+    height: 128px;
+    width: 128px;
+  }
+
+  .post-credits .author img {
+    height: 128px;
+    width: 128px;
+    border-radius: var(--space-sm);
+    border: 1px var(--white) solid;
+  }
+
+  .post-credits .author-info {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px), (max-height: 450px) {
+  nav,
+  footer {
+    padding: var(--space-xs);
+    flex-direction: column;
+  }
+
+  a {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .post-credits {
+    flex-direction: column;
+  }
+
+  .post-credits .author {
+    margin: var(--space-sm);
+    height: 128px;
+    width: 128px;
+  }
+
+  .post-credits .author img {
+    height: 128px;
+    width: 128px;
+    border-radius: var(--space-sm);
+    border: 1px var(--white) solid;
+  }
+
+  .post-credits .author-info {
+    text-align: center;
+    align-items: center;
+  }
+}
