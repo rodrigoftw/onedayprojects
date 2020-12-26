@@ -26,3 +26,4 @@ If you want to give me any project suggestions, feel free to do so by creating a
 |             [Simple Calendar](https://github.com/rodrigoftw/onedayprojects/tree/master/simplecalendar)              | [Link](https://codepen.io/rodrigoftw/full/bGwBmMG) |
 |                       [Clock](https://github.com/rodrigoftw/onedayprojects/tree/master/clock)                       | [Link](https://codepen.io/rodrigoftw/full/abmBQqX) |
 |                 [Letter Soup](https://github.com/rodrigoftw/onedayprojects/tree/master/lettersoup)                  | [Link](https://codepen.io/rodrigoftw/full/MWjpzdO) |
+|          [Simple ProgressBar](https://github.com/rodrigoftw/onedayprojects/tree/master/simpleprogressbar)           | [Link](https://codepen.io/rodrigoftw/full/GRjOYwo) |
